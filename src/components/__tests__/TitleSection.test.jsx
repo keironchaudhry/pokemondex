@@ -8,3 +8,11 @@ test("Search bar input is present on screen", () => {
 
   expect(searchBar).toBeInTheDocument();
 });
+
+test("Search button is present in the app", () => {
+  render(<TitleSection />);
+
+  const searchButton = screen.getByRole("button");
+
+  expect(searchButton).toBeInTheDocument();
+});
