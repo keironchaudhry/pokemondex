@@ -8,6 +8,7 @@ export const TitleSection = (props) => {
       <p>Pokemon stats</p>
       <input
         type="text"
+        placeholder="Enter pokemon name"
         value={pokemonName}
         onChange={(event) => {
           setPokemonName(event.target.value);
